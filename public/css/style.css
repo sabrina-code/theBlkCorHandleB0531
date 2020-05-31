@@ -1,0 +1,367 @@
+html {
+	font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
+	box-sizing: border-box;
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.6rem;
+	line-height: 2;
+	color: #000;
+	background-color: #fff;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+#home_home:after,
+#about:after,
+#campus:after,
+#program:after,
+#enrichment:after,
+#parent:after,
+#home-contact:after{
+      content:"";
+      position:fixed; 
+      top:0;
+      height:100vh; 
+      left:0;
+      right:0;
+	  z-index:-1; 
+}
+#home_home:after{
+	background: url(../images/bgnd_home.jpg) top center;
+	background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+#about:after{
+	  background: url(../images/bgnd_about.jpg) top center;
+	  background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+#campus:after{
+	  background: url(../images/bgnd_campus.jpg) top center;
+	  background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+#program:after{
+	  background: url(../images/bgnd_program.jpg) top center;
+	  background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+#enrichment:after{
+	  background: url(../images/bgnd_enrichment.jpg) top center;
+	  background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+#parent:after{
+	  background: url(../images/bgnd_parent.jpg) top center;
+	  background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+#home-contact:after{
+	  background: url(../images/bgnd_home.jpg) top center;
+	  background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+header{
+	overflow:auto;
+}
+.container{
+	max-width:2400px;
+}
+hr {
+	border: solid #DDDDDD;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 2rem 0 4rem;
+	height: 0;
+}
+a {
+	color:white;
+	text-decoration: none;
+	outline: 0;
+	-webkit-transition:0.2s color linear;
+	-moz-transition:0.2s color linear;
+	transition:0.2s color linear;
+}
+a:hover,
+a:visited:hover{
+	text-decoration: none;
+}
+ul, ol {
+	margin-bottom: 2rem;
+}
+ul {
+	list-style: none outside;
+}
+ol {
+	list-style: decimal;
+}
+ol, ul.square, ul.circle, ul.disc {
+	margin-left: 30px;
+}
+ul.square {
+	list-style: square outside;
+}
+ul.circle {
+	list-style: circle outside;
+}
+ul.disc {
+	list-style: disc outside;
+}
+ul ul, ul ol, ol ol, ol ul {
+	margin-left: 3rem;
+}
+ul ul li, ul ol li, ol ol li, ol ul li {
+	margin-bottom: 0
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/****** Typography ******/
+h1, h2,h3, h4, h5, h6 {
+	font-family: "Fredericka the Great";
+	color: #333;
+	line-height:100%;
+	margin-top:0;	
+}
+h1 {
+	font-size:6.5rem;
+	line-height: 6.5rem;
+}
+h2 {
+	font-size:2.8rem;
+	line-height: 4.8rem;
+}
+h3 {
+	font-size:1.2rem;
+}
+h4 {
+	font-size:1rem;
+}
+h5 {
+	font-size:.8rem;
+}
+h6 {
+	font-size:.65rem;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	font-weight: inherit;
+}
+p {
+	margin: 0 0 6rem 0;
+}
+p img {
+	margin: 0;
+}
+p.lead {
+	font-size: 3.1rem;
+	line-height: 3.1rem;	
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: 400;
+}
+small {
+	font-size: 80%;
+}
+.hide{
+	display:none;
+}
+/***** NAVI ****/
+#navi{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 4;
+	opacity:.95;
+}
+.logo-navi {
+	position: fixed;
+	top: 0;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    z-index:5;
+    padding-left: 0;
+    margin-left: 0;
+}
+#horizontal ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;  
+}
+#horizontal ul li {
+	color:white;
+	padding-left: .8rem;
+	padding-right: .8rem;
+	display: inline-block;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+#horizontal ul li a {
+	color:white;
+	font-family: "Fredericka the Great";
+	font-weight:600;
+}
+li.nav_home.active,
+li.nav_about.active,
+li.nav_campus.active,
+li.nav_program.active,
+li.nav_enrich.active,
+li.nav_parent.active,
+li.nav_contact.active {
+	padding-bottom:10px;
+}
+li.nav_home {
+background: #efd30c;
+}
+li.nav_home:hover,
+li.nav_home:visited:hover{
+	background: #ffc905;
+}
+li.nav_about {
+	background: #ce8bd0;
+	}
+li.nav_about:hover,
+li.nav_about:visited:hover{
+	background: #f05ff5;
+}
+li.nav_campus {
+	background: #337700;
+}
+li.nav_campus:hover,
+li.nav_campus:visited:hover{
+	background: #57b50f;
+}	
+li.nav_program {
+	background: #d86401;
+}
+li.nav_program:hover,
+li.nav_program:visited:hover{
+	background: #f99b00;
+}
+li.nav_enrich {
+	background: #c1c55e;
+}
+li.nav_enrich:hover,
+li.nav_enrich:visited:hover{
+	background: #dae104;
+}
+li.nav_parent {
+	background: #0088bf;
+}
+li.nav_parent:hover,
+li.nav_parent:visited:hover{
+	background: #0db7fa;
+}
+li.nav_contact {
+	background: #d01f03;
+}
+li.nav_contact:hover,
+li.nav_contact:visited:hover{
+	background: #fa5900;
+}
+.content-main{
+	max-width:2400px;
+	margin: 0 auto;
+}
+
+/******** FOOTER *********/
+.footer-logo {
+    padding-top: 0px;
+    vertical-align:top;
+    display:inline-block;
+	text-align:center;
+	padding-left:-15px;
+	padding-right:-15px;
+}
+.footer-adj{
+	padding-top:100px;
+	padding-bottom: 30px;
+	max-width: 2400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-logo img{
+	max-width: 200px;
+}	   	
+.contact-message {
+	color:#fff;
+    display:inline-block;
+    font-size:16px;
+    text-align: left;
+    vertical-align:middle;
+}
+.contact-message p{
+	line-height: 1;
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+}
+}	
+.contact-message a{
+	margin-top:30px;
+	color:#fff;
+}
+.social-icon{
+	display:inline-block;
+	text-align:center;
+    height: 100px;
+    margin-top:30px;
+}
+.social-icon a {
+font-size: 44px;
+color: #fff;
+line-height: normal;
+-webkit-transition: color .3s ease-in-out;
+-moz-transition: color .3s ease-in-out;
+-ms-transition: color .3s ease-in-out;
+-o-transition: color .3s ease-in-out;
+transition: color .3s ease-in-out;
+padding-left:15px;
+padding-right:15px;
+}
+.footer-content{
+	padding-top:120px;
+}
+.copyright {
+	margin:0;
+	letter-spacing:1px;
+	font-size:11px;
+	color:#fff;
+	text-align: center;
+	padding-top:120px;
+}
+
