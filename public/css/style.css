@@ -137,7 +137,7 @@ img {
 	height: auto;
 }
 a.logo img {
-    max-width: 75%;
+    max-width: 200px;
 }
 /****** Typography ******/
 h1, h2,h3, h4, h5, h6 {
@@ -147,8 +147,8 @@ h1, h2,h3, h4, h5, h6 {
 	margin-top:0;	
 }
 h1 {
-	font-size:6.5rem;
-	line-height: 6.5rem;
+	font-size:5.5rem;
+	line-height: 5.5rem;
 }
 h2 {
 	font-size:2.8rem;
@@ -605,11 +605,9 @@ section#home-about {
 	margin-top: -.8rem;
 	margin-left:0px;
 }
-.title-campus .icon_sec img{
-	margin-top:-1rem;
-	margin-left:0px;
-}
-.title-program .icon_sec img{
+.title-campus .icon_sec img,
+.title-program .icon_sec img,
+.title-parent .icon_sec img{
 	margin-top:-1rem;
 	margin-left:0px;
 }
@@ -617,9 +615,35 @@ section#home-about {
 	margin-top:-1rem;
 	margin-left:35px;
 }
-.title-parent .icon_sec img{
-	margin-top:-1rem;
-	margin-left:0px;
+.title-about{
+    background: url(../images/icon_about.png) no-repeat;
+	background-position: center right;
+	background-size: 100px;
+}
+.title-program{
+    background: url(../images/icon_program.png) no-repeat;
+	background-position: center right;
+	background-size: 100px;
+}
+.title-campus{
+    background: url(../images/icon_campus.png) no-repeat;
+    background-position: center right;
+	background-size: 100px;
+}
+.title-enrichment{
+    background: url(../images/icon_enrichment.png) no-repeat;
+	background-position: center right;
+	background-size: 100px;
+}
+.title-parent{
+    background: url(../images/icon_parent.png) no-repeat;
+	background-position: center right;  
+	background-size: 100px;  
+}
+.title-contact{
+    background: url(../images/icon_contact.png) no-repeat;
+	background-position: center right;
+	background-size: 100px;
 }
 .box-about {
 	padding:6px;
@@ -709,7 +733,7 @@ a.learn-more {
     background-color: #fff;
     opacity: .95;
     margin: 3rem auto 0;
-    padding: 6.5rem;
+    padding: 6.5rem 8%;
     border-radius:1rem 1rem 0 0;
 }
 .home-img {
@@ -802,6 +826,28 @@ a.learn-more {
 	margin-left: 3.2rem;
 }
 .section-header h1 {
-    font-size: 5.5rem;
+	font-size: 5.5rem;
+	padding-top: 2rem;
+}
+
+/******* RESPONSIVE ********/
+@media screen and (max-width: 64rem) {
+.section-header h1{
+	font-size: 4.8rem;
+	line-height: 4.8rem;
+}
+.section-header.title-enrichment,
+.section-header.title-parent
+{
+	height:15rem;
+}
+.title-about,
+.title-program,
+.title-campus,
+.title-enrichment,
+.title-parent,
+.title-contact{
+	background-size: 80px;
+}
 }
 
