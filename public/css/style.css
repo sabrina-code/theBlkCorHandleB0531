@@ -1,5 +1,5 @@
 html {
-	font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
+	font-size: 62.5%; /* 16px * 62.5 = 1rem = 1rem */
 	box-sizing: border-box;
 	height: 100%;
 }
@@ -9,9 +9,9 @@ body {
 	height: 100%;
 	width: 100%;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	line-height: 2;
-	color: #000;
+	color: #333;
 	background-color: #fff;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -23,13 +23,13 @@ body {
 #enrichment:after,
 #parent:after,
 #home-contact:after{
-      content:"";
-      position:fixed; 
-      top:0;
-      height:100vh; 
-      left:0;
-      right:0;
-	  z-index:-1; 
+    content:"";
+    position:fixed; 
+    top:0;
+    height:100vh; 
+    left:0;
+    right:0;
+    z-index:-1; 
 }
 #home_home:after{
 	background: url(../images/bgnd_home.jpg) top center;
@@ -37,7 +37,6 @@ body {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover;
 }
 #about:after{
 	  background: url(../images/bgnd_about.jpg) top center;
@@ -45,7 +44,6 @@ body {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover;
 }
 #campus:after{
 	  background: url(../images/bgnd_campus.jpg) top center;
@@ -53,7 +51,6 @@ body {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover;
 }
 #program:after{
 	  background: url(../images/bgnd_program.jpg) top center;
@@ -61,7 +58,6 @@ body {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover;
 }
 #enrichment:after{
 	  background: url(../images/bgnd_enrichment.jpg) top center;
@@ -69,7 +65,6 @@ body {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover;
 }
 #parent:after{
 	  background: url(../images/bgnd_parent.jpg) top center;
@@ -77,7 +72,6 @@ body {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover;
 }
 #home-contact:after{
 	  background: url(../images/bgnd_home.jpg) top center;
@@ -85,13 +79,12 @@ body {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover;
 }
 header{
 	overflow:auto;
 }
 .container{
-	max-width:2400px;
+	max-width:240rem;
 }
 hr {
 	border: solid #DDDDDD;
@@ -101,12 +94,12 @@ hr {
 	height: 0;
 }
 a {
-	color:white;
+	color:#fff;
 	text-decoration: none;
 	outline: 0;
-	-webkit-transition:0.2s color linear;
-	-moz-transition:0.2s color linear;
-	transition:0.2s color linear;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
 }
 a:hover,
 a:visited:hover{
@@ -122,7 +115,7 @@ ol {
 	list-style: decimal;
 }
 ol, ul.square, ul.circle, ul.disc {
-	margin-left: 30px;
+	margin-left: 3rem;
 }
 ul.square {
 	list-style: square outside;
@@ -143,12 +136,14 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-
+a.logo img {
+    max-width: 75%;
+}
 /****** Typography ******/
 h1, h2,h3, h4, h5, h6 {
 	font-family: "Fredericka the Great";
 	color: #333;
-	line-height:100%;
+	line-height:80%;
 	margin-top:0;	
 }
 h1 {
@@ -221,7 +216,7 @@ small {
 	justify-content: flex-end;  
 }
 #horizontal ul li {
-	color:white;
+	color:#fff;
 	padding-left: .8rem;
 	padding-right: .8rem;
 	display: inline-block;
@@ -232,7 +227,7 @@ small {
 	transition: all .3s ease-in-out;
 }
 #horizontal ul li a {
-	color:white;
+	color:#fff;
 	font-family: "Fredericka the Great";
 	font-weight:600;
 }
@@ -243,10 +238,10 @@ li.nav_program.active,
 li.nav_enrich.active,
 li.nav_parent.active,
 li.nav_contact.active {
-	padding-bottom:10px;
+	padding-bottom:1rem;
 }
 li.nav_home {
-background: #efd30c;
+    background: #efd30c;
 }
 li.nav_home:hover,
 li.nav_home:visited:hover{
@@ -295,14 +290,10 @@ li.nav_contact:visited:hover{
 	background: #fa5900;
 }
 .content-main{
-	max-width:2400px;
+	max-width:240rem;
 	margin: 0 auto;
 }
-
-
-
-
-
+/*-------hamburger--------*/
 .nav-mobile {
     display: none;
     position: fixed;
@@ -313,115 +304,114 @@ li.nav_contact:visited:hover{
     width: 7rem;
     z-index: 15;
 }
-					#nav-toggle{
-						position: absolute;
-						left: 18px;
-						top: 11px;
-						cursor: pointer;
-						padding: 10px 35px 16px 0px;
-					}
-					#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-						cursor: pointer;
-						border-radius: 1px;
-						height: 4px;
-						width: 36px;
-						background: #fff;
-						position: absolute;
-						display: block;
-						content: '';
-						transition: all .5s ease-in-out;
-						transform-origin: 0px 0px;
-					}
-					#nav-toggle span:before{
-						top: -12px;
-						
-					}
-					#nav-toggle span:after{
-						bottom: -12px;
-					}
-					#nav-toggle.active span{
-						background:transparent;
-						width:0;
-					}
-					#nav-toggle.active span:before{
-						transform: rotate(45deg);
-						transform-origin: 0% 0%;
-					}
-					#nav-toggle.active span:after{
-						transform: rotate(-45deg);
-						transform-origin: 0% 100%;
-					}
-					ul#nav-overlay {
-						margin:0 auto;
-						padding-top: 18vh;
-						overflow-y: scroll;
-						height: 100vh;
-					}
-					.overlay {
-						margin-left: -15px;
-					}
-					nav ul.overlay-list {
-						background-color: rgba(0,0,0,.9);
-						z-index:11;
-						overflow:hidden;
-						position:fixed;
-						height: 0;
-						width: 100%;
-						height:100%;
-					}
-					ul.overlay-list {
-						z-index: 100;
-						padding-top:80px;
-						list-style: none;  
-						z-index:11;     
-					}
-					ul.overlay-list li {
-					display:block;
-					}
-					ul.overlay-list li a{
-						font-family: "Fredericka the Great";
-						font-size: 60px;
-						line-height:70px;
-						display: block;
-						text-align: center;
-						color: #fff;
-						margin-top: 1px;
-						margin-bottom:8px !important; 
-						border-bottom: 1px solid rgba(255,255,255,0);
-					}  
-					ul.overlay-list li a:hover, 
-					ul.overlay-list li a:active:hover{
-						color:white;
-						background: #aa5d04;
-						-webkit-transition: all .3s ease-in-out;
-						-moz-transition: all .3s ease-in-out;
-						
-							-ms-transition: all .3s ease-in-out;
-							-o-transition: all .3s ease-in-out;
-								transition: all .3s ease-in-out;
-					} 
+#nav-toggle{
+    position: absolute;
+    left: 1.8rem;
+    top: 1.1rem;
+    cursor: pointer;
+    padding: 1rem 35px 16px 0px;
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 4px;
+    width: 3.5rem;
+    background: #fff;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all .5s ease-in-out;
+    transform-origin: 0 0;
+}
+#nav-toggle span:before{
+    top: -1.2rem;
+    
+}
+#nav-toggle span:after{
+    bottom: -1.2rem;
+}
+#nav-toggle.active span{
+    background:transparent;
+    width:0;
+}
+#nav-toggle.active span:before{
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+}
+#nav-toggle.active span:after{
+    transform: rotate(-45deg);
+    transform-origin: 0% 100%;
+}
+ul#nav-overlay {
+    margin:0 auto;
+    padding-top: 18vh;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.overlay {
+    margin-left: -1.5rem;
+}
+nav ul.overlay-list {
+    background-color: rgba(0,0,0,.9);
+    z-index:11;
+    overflow:hidden;
+    position:fixed;
+    height: 0;
+    width: 100%;
+    height:100%;
+}
+ul.overlay-list {
+    z-index: 100;
+    padding-top:8rem;
+    list-style: none;  
+    z-index:11;     
+}
+ul.overlay-list li {
+display:block;
+}
+ul.overlay-list li a{
+    font-family: "Fredericka the Great";
+    font-size: 6rem;
+    line-height:70px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    margin-top: 1px;
+    margin-bottom:.8rem !important; 
+    border-bottom: 1px solid rgba(255,255,255,0);
+}  
+ul.overlay-list li a:hover, 
+ul.overlay-list li a:active:hover{
+    color:#fff;
+    background: #aa5d04;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+} 
 
-					ul.active.overlay-list {
-						margin-bottom: 8px;
-					}
-					#nav-toggle{
-						display:none;
-					}
-					#nav-overlay{
-						display:none;
-					}
+ul.active.overlay-list {
+    margin-bottom: .8rem;
+}
+#nav-toggle{
+    display:none;
+}
+#nav-overlay{
+    display:none;
+}
 
 @media screen and (max-width: 992px) {
-
 	#horizontal {
-    display: none;
+        display: none;
 	}
 	#nav-toggle{
 		display:block;
-		z-index: 3; /* Sit on top */
+		z-index: 3; 
 	}
 	.nav-mobile {
-    display: block;
+        display: block;
     }
 	.hamburger{
 		position: fixed;
@@ -432,55 +422,55 @@ li.nav_contact:visited:hover{
 		top: 0;
 		height: 90%;
 		width: 100%;
-		position: fixed; /* Stay in place */
-		z-index: 10; /* Sit on top */
+		position: fixed; 
+		z-index: 10; 
 		overflow-x: hidden; /* Disable horizontal scroll */
 	}
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 56.8rem) {
 	#nav-overlay {
 		height: 70%;		
 	}
 	ul#nav-overlay{
-		padding-top: 90px;
+		padding-top: 9remx;
 	}
 	ul.overlay-list li a{
-		font-size: 40px;
-		line-height: 40px;
+		font-size: 4rem;
+		line-height: 4rem;
 	}
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 42.5rem) {
 	ul.overlay-list li a{
-		font-size: 32px;
-		line-height: 38px;
+		font-size: 3.2rem;
+		line-height: 3.8rem;
 	}
 }
 
 /******** FOOTER *********/
 .footer-logo {
-    padding-top: 0px;
+    padding-top: 0;
     vertical-align:top;
     display:inline-block;
 	text-align:center;
-	padding-left:-15px;
-	padding-right:-15px;
+	padding-left:-1.5rem;
+	padding-right:-1.5rem;
 }
 .footer-adj{
-	padding-top:100px;
-	padding-bottom: 30px;
-	max-width: 2400px;
-    margin-left: auto;
-    margin-right: auto;
+	padding: 10rem 10% 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .footer-logo img{
-	max-width: 200px;
+    max-width: 20rem;
+    margin-bottom: 4rem;
 }	   	
 .contact-message {
 	color:#fff;
-    display:inline-block;
-    font-size:16px;
-    text-align: left;
-    vertical-align:middle;
+    text-align: center;
+    font-size:1.6rem;
+    padding: 0 1.5rem;
 }
 .contact-message p{
 	line-height: 1;
@@ -488,14 +478,14 @@ li.nav_contact:visited:hover{
 	margin-bottom: 2rem;
 }
 .contact-message a{
-	margin-top:30px;
+	margin-top:3rem;
 	color:#fff;
 }
 .social-icon{
-	display:inline-block;
-	text-align:center;
-    height: 100px;
-    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    margin-top:3rem;
 }
 .social-icon a {
 font-size: 44px;
@@ -506,61 +496,61 @@ line-height: normal;
 -ms-transition: color .3s ease-in-out;
 -o-transition: color .3s ease-in-out;
 transition: color .3s ease-in-out;
-padding-left:15px;
-padding-right:15px;
+padding-left:1.5rem;
+padding-right:1.5rem;
 }
 .footer-content{
-	padding-top:120px;
+	padding-top:12rem;
 }
 .copyright {
 	margin:0;
 	letter-spacing:1px;
-	font-size:11px;
+	font-size:1.1rem;
 	color:#fff;
 	text-align: center;
-	padding-top:120px;
+	padding: 4rem 0 4rem;
 }
 
 
 /*************** COMMON ****************/
 .content_main{
-	margin-bottom:300px;
-    max-width: 2400px;
-    margin-left: auto;
-    margin-right: auto;
+	margin-bottom:30rem;
+    max-width: 240rem;
+    display: flex;
+    justify-content: center;
 }
 .sect-content {
-    background-color: white;
+    background-color: #fff;
     opacity: .95;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 0px;
-    padding: 80px 50px;
-    border-radius: 10px 10px 0 0;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    padding: 8rem 5rem;
+    border-radius: 1rem 1rem 0 0;
 }
 .subpage_title{
     opacity: 1;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 0px;
-    border-radius:10px;
-    margin-top: 460px;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    border-radius:1rem;
+    margin-top: 46rem;
 	background-color:rgba(255,255,255,.8);
-	padding-top:30px;
-	padding-bottom: 25px;
+	padding-top:3rem;
+	padding-bottom: 2.5rem;
 
 }
 .subpage-img {
-	padding-top:30px;
-	padding-bottom:30px;
+	padding-top:3rem;
+	padding-bottom:3rem;
 }
 .gold {
-		background-color:#f3882d;
+    background-color:#f3882d;
 }
 .pink {
-		background-color:#e89bea;
+    background-color:#e89bea;
 }
 .green{
 	background:#458a11;
@@ -576,10 +566,10 @@ padding-right:15px;
 }
 /************* HOME PAGE ****************/
 section {
-    padding-top: 30px;
+    padding-top: 3rem;
 }
 section#home-about {
-	padding-top: 70rem;
+	padding-top: 60rem;
 }
 .section-header{ 
 	width:100%;
@@ -604,41 +594,41 @@ section#home-about {
 .title-parent h1{
 	color:#00a5e8;
 	display:inline-block;
-	margin-right: 20px;
+	margin-right: 2rem;
 }
 .title-contact h1{
 	color:#b91d05;
 	display:inline-block;
-	margin-right: 20px;
+	margin-right: 2rem;
 }
 .title-about .icon_sec img{
-	margin-top: -8px;
+	margin-top: -.8rem;
 	margin-left:0px;
 }
 .title-campus .icon_sec img{
-	margin-top:-10px;
+	margin-top:-1rem;
 	margin-left:0px;
 }
 .title-program .icon_sec img{
-	margin-top:-10px;
+	margin-top:-1rem;
 	margin-left:0px;
 }
 .title-enrichment .icon_sec img{
-	margin-top:-10px;
+	margin-top:-1rem;
 	margin-left:35px;
 }
 .title-parent .icon_sec img{
-	margin-top:-10px;
+	margin-top:-1rem;
 	margin-left:0px;
 }
 .box-about {
 	padding:6px;
-    padding-left:25px;
+    padding-left:2.5rem;
     background:#bb7fbb;
-    color:#ffffff;
-    width:220px;
-    padding-left:25px;
-    margin-bottom: 45px;
+    color:#fff;
+    width:22rem;
+    padding-left:2.5rem;
+    margin-bottom: 4.5rem;
     border-radius:5px;
 }
 .box-contact h2{
@@ -651,16 +641,16 @@ section#home-about {
 }
 .home-history{
 	color:#000;
-	margin: 3rem 0;
+	margin: 1rem 0;
 }
 .home-contact{
 	color:#000;
 	font-weight:400;
 }
-.learn-more {
+a.learn-more {
 	font-family: "Fredericka the Great";
 	font-size:2rem;
-    padding: 3px 15px 5px;
+    padding: .3rem 1.5rem .5rem;
     color:#fff;
 	text-align: center;
 	border-radius:.4rem;
@@ -669,8 +659,8 @@ section#home-about {
 	background:#bb7fbb;
 }
 .campus {
-		background:#40880b;
-	}
+    background:#40880b;
+}
 .program{
 	background: #f39c12;
 }
@@ -694,8 +684,8 @@ section#home-about {
 .parent:hover,
 .parent:visited:hover
  {
-	background:#aadaff;
-	font-weight: 600;
+	background:#53b3fd;
+    transition: all ease .5s;
 }
 .offer{
 	font-family: "Fredericka the Great";
@@ -703,115 +693,115 @@ section#home-about {
 }
 .box-program {
 	padding:6px;
-    padding-left:25px;
+    padding-left:2.5rem;
     background:#f39c12;
     color:#ffffff;
-    width:220px;
-    padding-left:25px;
-    margin-bottom: 25px;
+    width:22rem;
+    padding-left:2.5rem;
+    margin-bottom: 2.5rem;
 }
 .about-content{
-	background-color:white;
+	background-color:#fff;
 	opacity:.8;
 	margin:0 auto;	
 }
 .section-content{
-    background-color: white;
+    background-color: #fff;
     opacity: .95;
-    margin: 30px auto 0;
-    padding: 50px;
-    border-radius:10px 10px 0 0;
+    margin: 3rem auto 0;
+    padding: 6.5rem;
+    border-radius:1rem 1rem 0 0;
 }
 .home-img {
-	background-position: 0px 0px;
+	background-position: 0 0;
 	margin: auto;
 	padding-left:0;
 	padding-right:0;
-	padding-bottom: 60px;
-	border-radius:0 0 10px 10px;
-	background-color: white;
+	padding-bottom: 6rem;
+	border-radius:0 0 1rem 1rem;
+	background-color: #fff;
 	
 }
 
 .home-img-about {
-	background-position: 0px 0px;
+	background-position: 0 0;
 	margin-right:auto;
 	margin-left:auto;
 	padding-left:0;
 	padding-right:0;
-	padding-bottom: 60px;
-	border-radius:0 0 10px 10px;
+	padding-bottom: 6rem;
+	border-radius:0 0 1rem 1rem;
 	background-color: #ce8bd0;
 	
 }
 .home-img-campus {
-	background-position: 0px 0px;
+	background-position: 0 0;
 	margin-right:auto;
 	margin-left:auto;
 	padding-left:0;
 	padding-right:0;
-	padding-bottom: 60px;
-	border-radius:0 0 10px 10px;
+	padding-bottom: 6rem;
+	border-radius:0 0 1rem 1rem;
 	background-color:#458a11;	
 }
 .home-img-program {
-	background-position: 0px 0px;
+	background-position: 0 0;
 	margin-right:auto;
 	margin-left:auto;
 	padding-left:0;
 	padding-right:0;
-	padding-bottom: 60px;
-	border-radius:0 0 10px 10px;
+	padding-bottom: 6rem;
+	border-radius:0 0 1rem 1rem;
 	background-color:#d86401;	
 }
 .home-img-program {
-	background-position: 0px 0px;
+	background-position: 0 0;
 	margin-right:auto;
 	margin-left:auto;
 	padding-left:0;
 	padding-right:0;
-	padding-bottom: 60px;
-	border-radius:0 0 10px 10px;
+	padding-bottom: 6rem;
+	border-radius:0 0 1rem 1rem;
 	background-color:#f3882d;	
 }
 
 .home-img-enrich {
-	background-position: 0px 0px;
+	background-position: 0 0;
 	margin-right:auto;
 	margin-left:auto;
 	padding-left:0;
 	padding-right:0;
-	padding-bottom: 60px;
-	border-radius:0 0 10px 10px;
+	padding-bottom: 6rem;
+	border-radius:0 0 1rem 1rem;
 	background-color:#b0bd56;	
 }
 
 .home-img-parent {
-	background-position: 0px 0px;
+	background-position: 0 0;
 	margin-right:auto;
 	margin-left:auto;
 	padding-left:0;
 	padding-right:0;
-	padding-bottom: 60px;
-	border-radius:0 0 10px 10px;
+	padding-bottom: 6rem;
+	border-radius:0 0 1rem 1rem;
 	background-color:#42bbea;	
 }
 .home-img-contact {
-	background-position: 0px 0px;
+	background-position: 0 0;
 	margin-right:auto;
 	margin-left:auto;
 	padding-left:0;
 	padding-right:0;
-	padding-bottom: 60px;
-	border-radius:0 0 10px 10px;
+	padding-bottom: 6rem;
+	border-radius:0 0 1rem 1rem;
 	background-color: #b91d05;	
 }
 
 .subpage_title h1 {
-	margin-top: 13px;
-	margin-left: 32px;
+	margin-top: 1.3rem;
+	margin-left: 3.2rem;
 }
 .section-header h1 {
-    font-size: 65px;
+    font-size: 6.5rem;
 }
 
