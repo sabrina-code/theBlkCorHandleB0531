@@ -5,8 +5,11 @@ var app = express();
 
 var PORT = process.env.PORT || 8080;
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+app.engine("hbs", exphbs({
+  defaultLayout: "main",
+  extname: '.hbs'
+}));
+app.set("view engine", "hbs");
 
 app.use(express.static("public"));
 

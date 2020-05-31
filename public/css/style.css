@@ -1,5 +1,5 @@
 html {
-	font-size: 62.5%; /* 16px * 62.5 = 1rem = 1rem */
+	font-size: 62.5%;
 	box-sizing: border-box;
 	height: 100%;
 }
@@ -802,6 +802,6 @@ a.learn-more {
 	margin-left: 3.2rem;
 }
 .section-header h1 {
-    font-size: 6.5rem;
+    font-size: 5.5rem;
 }
 
