@@ -170,6 +170,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	font-weight: inherit;
 }
 p {
+	font-size: 1.8rem;
+	line-height: 2;
 	margin: 0 0 6rem 0;
 }
 p img {
@@ -573,7 +575,8 @@ section#home-about {
 }
 .section-header{ 
 	width:100%;
-	height: 10rem;
+	height: 15rem;
+	margin-bottom: 1rem;
 }
 .title-about h1 { 
 	color:#ce5dce;
@@ -678,6 +681,7 @@ a.learn-more {
     color:#fff;
 	text-align: center;
 	border-radius:.4rem;
+	margin-bottom: 2rem;
 }
 .about{
 	background:#bb7fbb;
@@ -743,10 +747,8 @@ a.learn-more {
 	padding-right:0;
 	padding-bottom: 6rem;
 	border-radius:0 0 1rem 1rem;
-	background-color: #fff;
-	
+	background-color: #fff;	
 }
-
 .home-img-about {
 	background-position: 0 0;
 	margin-right:auto;
@@ -755,8 +757,7 @@ a.learn-more {
 	padding-right:0;
 	padding-bottom: 6rem;
 	border-radius:0 0 1rem 1rem;
-	background-color: #ce8bd0;
-	
+	background-color: #ce8bd0;	
 }
 .home-img-campus {
 	background-position: 0 0;
@@ -788,7 +789,6 @@ a.learn-more {
 	border-radius:0 0 1rem 1rem;
 	background-color:#f3882d;	
 }
-
 .home-img-enrich {
 	background-position: 0 0;
 	margin-right:auto;
@@ -799,7 +799,6 @@ a.learn-more {
 	border-radius:0 0 1rem 1rem;
 	background-color:#b0bd56;	
 }
-
 .home-img-parent {
 	background-position: 0 0;
 	margin-right:auto;
@@ -820,18 +819,27 @@ a.learn-more {
 	border-radius:0 0 1rem 1rem;
 	background-color: #b91d05;	
 }
-
 .subpage_title h1 {
 	margin-top: 1.3rem;
 	margin-left: 3.2rem;
 }
-.section-header h1 {
+.section-header h1,
+.section-header h1,
+.section-header h1,
+.section-header h1
+ {
 	font-size: 5.5rem;
-	padding-top: 2rem;
+	padding-top: 4rem;
+}
+.section-header.title-enrichment h1,
+.section-header.title-parent h1
+ {
+	font-size: 5.5rem;
+	padding-top: 1rem;
 }
 
 /******* RESPONSIVE ********/
-@media screen and (max-width: 64rem) {
+@media screen and (max-width: 640px) {
 .section-header h1{
 	font-size: 4.8rem;
 	line-height: 4.8rem;
@@ -847,7 +855,33 @@ a.learn-more {
 .title-enrichment,
 .title-parent,
 .title-contact{
-	background-size: 80px;
+	background-size: 90px;
 }
+}
+@media screen and (max-width: 480px) {
+	p{
+		font-size: 1.5rem;
+		margin: 0 0 4rem 0;
+	}
+	.section-content{
+		padding: 1rem 1.5rem;
+	}
+	.section-header h1,
+	.section-header.title-enrichment h1,
+	.section-header.title-parent h1
+	{
+		font-size: 3.3rem;
+		line-height: 3.7rem;
+		padding-top: 3.5rem;
+	}
+	.section-header h1{
+		padding-top: 5.6rem;
+	}
+	.box-contact h2 {
+		font-size: 2rem;
+	}
+	.home-history {
+		font-size: 2rem;
+	}
 }
 
