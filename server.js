@@ -34,14 +34,6 @@ app.get('/', (req, res) => {
     })
 });
 
-
-
-
-
-
-
-
-
 let PORT = 5000;
 
 app.listen(PORT, () => {
