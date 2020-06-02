@@ -1,9 +1,17 @@
-var express = require("express");
-var exphbs = require("express-handlebars");
+const express = require("express");
+const exphbs = require("express-handlebars");
+const mongoose = require("mongoose");
+const config = require("./backend/config.js");
+const db = require("./backend/landingModel");
 
-var app = express();
+const mongodbUri = config.MONGODB_URI;
+mongoose.connect(mongodbUri, {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+  useCreateIndex: true
+}).catch(error => console.log(error.reason));
 
-var PORT = process.env.PORT || 8080;
+const app = express();
 
 app.engine("hbs", exphbs({
   defaultLayout: "main",
@@ -13,11 +21,29 @@ app.set("view engine", "hbs");
 
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-  res.render("index");
+// app.get("/", (req, res) => {
+//   res.render("index");
+// });
+
+app.get('/', (req, res) => {
+  db.landing.find({})
+    .then(landing => {
+      res.json(landing);
+    }).catch(err => {
+      res.json(err);
+    })
 });
 
 
-app.listen(PORT, function () {
-  console.log("App listening on PORT " + PORT);
+
+
+
+
+
+
+
+let PORT = 5000;
+
+app.listen(PORT, () => {
+  console.log("App listening on " + PORT);
 });
