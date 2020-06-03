@@ -3,11 +3,11 @@ const Landing = require("../backend/landingModel");
 
 describe("Creating MongoDB data.", () => {
     it("save data", (done) => {
-        const home = new Landing({ name: "home-about" });
+        const landing = new Landing({ name: "home-about" });
 
-        home.save()
+        landing.save()
             .then(() => {
-                assert(!home.isNew);
+                assert(!landing.isNew);
                 done();
             });
     });
