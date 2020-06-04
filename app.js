@@ -2,10 +2,16 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const routes = require("./backend/routes/routes");
-mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/cornerstone");
 
 const app = express();
+
+//if not testing, connect to the true database-production or development
+//use helper_test to connect to another database for testing
+//so that mongoose may not skip if and execute the wrong connection(asynch)
+mongoose.Promise = global.Promise;
+if (process.env.NODE_ENV !== "test") {
+    mongoose.connect("mongodb://localhost/cornerstone");
+}
 
 app.use(bodyParser.json());//before routes
 routes(app);

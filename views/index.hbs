@@ -1,109 +1,22 @@
 {{>header}}
 <div id="home_home" class="content_main">
   <div class="col-md-9 col-sm-10">
-
-    <section id="home-campus">
+    {{#each data}}
+    <section id="{{this.name}}">
       <div class="section-content">
-        <header class="section-header title-campus">
-          <h1>Our Campus</h1>
+        <header class="section-header {{this.headercls}}">
+          <h1>{{this.title}}</h1>
         </header>
-        <p>
-          Our school is located in beautiful Agoura Hills just off the 101 Freeway. We are easily
-          accessible from communities near and far since we are right off the freeway between Kanan Rd.
-          and Cheseboro Rd. Some of the communities we serve are Agoura Hills, Calabasas, Hidden Hills,
-          Woodland Hills, West Hills, Tarzana, Malibu, Westlake Village, Oak Park, Thousand Oaks, Lake
-          Sherwood, Simi Valley, Santa Rosa and North Ranch.</p>
-
-        <a class="learn-more campus" href="campus.html">learn more</a>
+        <h2 class="{{this.subtitlecls}}">{{this.subtitle}}</h2>
+        <p>{{this.intro}}</p>
+        <a class="learn-more {{this.linkcls}}" href="{{this.linkpage}}">learn more</a>
       </div>
+      <img src="{{this.imgsrc}}">
+      <div class="{{this.imgcls}}">
 
-      <div class="home-img-campus">
-        <img src="images/home_campus.jpg" alt="">
       </div>
     </section>
-
-    <section id="home-program">
-      <div class="section-content">
-        <header class="section-header title-program">
-          <h1>Programs</h1>
-        </header>
-        <p>
-          We offer different programs to prepare children for their learning needs towards future success.
-          This is just a temp introductory text put in here. Please write up a better one. Thanks. We
-          offer different programs to prepare children for their learning needs towards future success.
-          This is just a temp introductory text put in here. Please write up a better one. Thanks. Program
-          offered: <a class="offer" href="">Transitional Two’s Program ,</a> <a class="offer" href="">Nursery
-            Program,</a>
-          <a class="offer" href="">Preschool 1 Class,</a> <a class="offer" href="">Preschool 2 Class</a></p>
-
-        <a class="learn-more program" href="program.html">learn more</a>
-      </div>
-
-      <div class="home-img-program">
-      </div>
-    </section>
-
-    <section id="home-enrichment">
-      <div class="section-content">
-        <header class="section-header title-enrichment">
-          <h1>Enrichment Programs</h1>
-        </header>
-        <p>
-          We offer different programs to prepare children for their learning needs towards future success.
-          This is just a temp introductory text put in here. Please write up a better one. Enrichment
-          program offered: <a class="offer" href="">School Library,</a> <a class="offer" href="">Character
-            Education,</a> <a class="offer" href="">Kindermusik,</a> <a class="offer" href="">Yoga,
-            Breath and Movement,</a><a class="offer" href=""> On Site School Assemblies</a></p>
-        <a class="learn-more enrichment" href="enrichment.html">learn more</a>
-      </div>
-
-      <div class="home-img-enrich">
-        <img src="images/home_enrichment.jpg" alt="">
-      </div>
-    </section>
-
-    <section id="home-parent">
-      <div class="section-content">
-        <header class="section-header title-parent">
-          <h1>Parent Involvement</h1>
-        </header>
-        <p>
-          We firmly believe that a strong home school connection is so very valuable and important for our
-          families, students, and staff. We encourage parents to be pro-active in their child’s early
-          childhood school experience. Each classroom is grateful to have one parent volunteer to be a
-          Room Parent for the duration of the school year (September-August). Room Parents are a valuable
-          source for teachers and can be a direct liaison to other families in the class. Room Parents
-          work closely with the classroom teacher and primarily oversee the classroom website on
-          Shutterfly. This communication between school and home keeps parents informed of specific
-          classroom activities, volunteer opportunities, scheduled classroom festivities, and other
-          important information that will be helpful to the students and class.</p>
-
-        <a class="learn-more parent" href="parent.html">learn more</a>
-      </div>
-
-      <div class="home-img-parent">
-        <img src="images/home_parent.jpg" alt="">
-      </div>
-    </section>
-
-    <section id="home-contact">
-      <div class="section-content box-contact">
-        <header class="section-header title-contact ">
-          <h1>Contact Us</h1>
-        </header>
-        <h2 class="home-contact">Tours and Enrollment</h2>
-        <p>
-          Please contact us to schedule a tour of our campus and to learn more about our programs. Tours
-          are conducted daily between 10:00 AM-12:00 PM. Please plan on spending at least 45 minutes with
-          us. We encourage you to bring your child on the tour with you so that we may have the
-          opportunity to meet him/her and most importantly your child will get a feel for our school. This
-          is in fact where “they” will be learning and playing!</p>
-      </div>
-
-      <div class="home-img-contact">
-        <img src="images/home_contact.jpg" alt="">
-      </div>
-    </section>
+    {{/each}}
   </div>
 </div>
 {{>footer}}

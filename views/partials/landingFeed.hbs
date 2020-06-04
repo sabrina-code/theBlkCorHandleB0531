@@ -1,0 +1,15 @@
+{{# each landing}}
+<section id="{{this.name}}">
+    <div class="section-content">
+        <header class="section-header {{this.headercls}}">
+            <h1>{{this.title}}</h1>
+        </header>
+        <h2 class="{{this.subtitlecls}}">{{this.subtitle}}</h2>
+        <p>{{this.intro}}</p>
+        <a class="learn-more {{this.linkcls}}" href="{{this.linkpage}}">learn more</a>
+    </div>
+    <a class="{{this.imgcls}}">
+        <img src="{{this.imgsrc}}">
+    </a>
+</section>
+{{/each}}
