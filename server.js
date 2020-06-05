@@ -27,28 +27,6 @@ connection.once("open", function () {
 
 mongoose.Promise = global.Promise;
 
-//fetch data
-app.use("/", router);
-
-router.get("/", async (req, res) => {
-    try {
-        const data = await Landing.find({});
-        res.render("index", { data })
-    } catch (err) {
-        console.error(err);
-    }
-});
-
-let data;
-router.get("/api", async (req, res) => {
-    try {
-        const data = await Landing.find({});
-        res.send(data[0].name);;
-    } catch (err) {
-        console.log(err);
-    }
-});
-
 //Handelbars
 app.engine("hbs", exphbs({
     defaultLayout: "main",
@@ -57,6 +35,38 @@ app.engine("hbs", exphbs({
 }));
 
 app.set("view engine", "hbs");
+
+//Routes
+app.use("/", router);
+
+router.get("/index", async (req, res) => {
+    try {
+        const data = await Landing.find({});
+        res.render("index", { data })
+    } catch (err) {
+        console.error(err);
+    }
+});
+
+router.get("/about", async (req, res) => {
+    res.render("about");
+    // try {
+    //     const data = await Landing.find({});
+    //     res.render("index", { data })
+    // } catch (err) {
+    //     console.error(err);
+    // }
+});
+
+//API
+router.get("/api", async (req, res) => {
+    try {
+        const data = await Landing.find({});
+        res.send(data[0].name);;
+    } catch (err) {
+        console.log(err);
+    }
+});
 
 
 let PORT = config.PORT;

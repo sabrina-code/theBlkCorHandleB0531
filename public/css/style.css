@@ -979,4 +979,27 @@ a.learn-more {
 		font-size: 2rem;
 	}
 }
-
+/******** ABOUT PAGE *********/
+#about.wrap{
+    position: relative;
+	z-index: 0;
+    background: url(../images/bgnd_about.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#about .subpage_title h1 {
+	font-size:65px;
+	color:#ce5dce;
+}
+#about h1 {
+	font-size:50px;
+	color:#ce5dce;
+}
+#about .home-img {
+    background-color: #e89bea;
+}
+.title-about{
+    background: url(../images/icon_about.png) no-repeat;
+    background-position: top right;
+}
