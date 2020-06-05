@@ -1,0 +1,21 @@
+{{#each data}}
+<section>
+    <div class="subpage_title">
+        <header class="section-header {{this.titlecls}}">
+            <h1 class="">{{this.title}}</h1>
+        </header>
+    </div>
+</section>
+
+<section>
+    <div class="sect-content">
+        <h2 class="">{{this.subtitle}}</h2>
+        <p>{{this.intro}}</p>
+        <h3 class="{{this.subtitlecls}}">{{this.subtitle}}</h3>
+        <p>{{this.info}}</p>
+    </div>
+    <img src={{this.imgsrc}} alt="">
+    <div class="{{this.bordercls}}">
+    </div>
+</section>
+{{/each}}

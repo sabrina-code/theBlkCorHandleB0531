@@ -1,9 +1,10 @@
+{{>header}}
 <div id="home_home" class="content_main">
   <div class="col-md-10 col-sm-10 col-xs-12">
     {{#each data}}
     <section id="{{this.name}}">
       <div class="section-content">
-        <header class="section-header {{this.headercls}}">
+        <header class="section-header {{this.titlecls}}">
           <h1>{{this.title}}</h1>
         </header>
         <h2 class="{{this.subtitlecls}}">{{this.subtitle}}</h2>
@@ -11,10 +12,10 @@
         <a class="learn-more {{this.linkcls}}" href="{{this.linkpage}}">learn more</a>
       </div>
       <img src="{{this.imgsrc}}">
-      <div class="{{this.imgcls}}">
-
+      <div class="{{this.bordercls}}">
       </div>
     </section>
     {{/each}}
   </div>
 </div>
+{{>footer}}

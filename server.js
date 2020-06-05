@@ -4,6 +4,7 @@ const Handlebars = require('handlebars')
 const mongoose = require("mongoose");
 const config = require("./backend/config");
 const Landing = require("./backend/models/landingModel");
+const Page = require("./backend/models/sectionModel");
 const router = express.Router();
 const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access')
 
@@ -48,14 +49,13 @@ router.get("/index", async (req, res) => {
     }
 });
 
-router.get("/about", async (req, res) => {
-    res.render("about");
-    // try {
-    //     const data = await Landing.find({});
-    //     res.render("index", { data })
-    // } catch (err) {
-    //     console.error(err);
-    // }
+router.get("/programs", async (req, res) => {
+    try {
+        const data = await Page.find({});
+        res.render("programs", { data })
+    } catch (err) {
+        console.error(err);
+    }
 });
 
 //API
