@@ -1,0 +1,26 @@
+<div id="enrichment" class="content_page ">
+    <div class="col-md-10 col-sm-10 col-xs-12">
+
+        <section>
+            <div class="subpage_title">
+                <header class="section-header title-enrichment">
+                    <h1 class="">Enrichment Programs</h1>
+                </header>
+            </div>
+        </section>
+        {{#each data}}
+        <section>
+            <div class="sect-content">
+                <h2 class="">{{this.title}}</h2>
+                <p>{{this.infop1}}</p>
+            </div>
+            <img src="{{this.imgsrc}}" alt="">
+            <div class=" {{this.bordercls}}">
+            </div>
+        </section>
+        {{/each}}
+    </div>
+</div>
+<footer class="footer-enrichment">
+    {{>footer}}
+</footer>

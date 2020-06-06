@@ -7,6 +7,7 @@ const Landing = require("./backend/models/landingModel");
 const About = require("./backend/models/aboutModel");
 const Campus = require("./backend/models/campusModel");
 const Programs = require("./backend/models/programsModel");
+const Enrichment = require("./backend/models/enrichmentModel");
 const router = express.Router();
 const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access')
 
@@ -78,6 +79,14 @@ router.get("/programs", async (req, res) => {
     }
 });
 
+router.get("/enrichment", async (req, res) => {
+    try {
+        const data = await Enrichment.find({});
+        res.render("enrichment", { data })
+    } catch (err) {
+        console.error(err);
+    }
+});
 //API
 router.get("/api", async (req, res) => {
     try {

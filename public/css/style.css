@@ -638,7 +638,7 @@ padding-right:1.5rem;
 .footer-programs{
 	background: #f3882d;
 }
-.footer-enrich{
+.footer-enrichment{
 	background: #b0bd56;
 }
 .footer-parent{
@@ -1041,4 +1041,30 @@ a.learn-more {
 .title-programs{
     background: url(../images/icon_programs.png) no-repeat;
     background-position: right center;
+}
+/*********** ENRICHMENT PROGRAMS ************/
+#enrichment.wrap{
+    position: relative;
+    z-index: 500;
+    background: url(../images/bgnd_enrichment.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#enrichment .subpage_title h1 {
+	display:block;
+	font-size:65px;
+	color:#919603;
+	width:60vw;
+}
+#enrichment h1 {
+	font-size:50px;
+	color:#919603;
+}
+#enrichment .home-img {
+    background-color: #b0bd56;
+}
+.title-enrichment{
+    background: url(../images/icon_enrichment.png) no-repeat;
+    background-position: center right;
 }
