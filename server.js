@@ -43,7 +43,7 @@ app.use("/", router);
 router.get("/index", async (req, res) => {
     try {
         const data = await Landing.find({});
-        res.render("index", { data })
+        res.render("index", { data, active: { navhome: true } })
     } catch (err) {
         console.error(err);
     }

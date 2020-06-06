@@ -8,15 +8,13 @@
         </div>
 
         <div id="horizontal">
-            <ul>
-                <li class="nav_home active"><a href="index">Home</a></li>
-                <li class="nav_about"><a href="about">About Us</a></li>
-                <li class="nav_campus"><a href="campus">Our Campus</a> </li>
-                <li class="nav_programs"><a href="programs">Programs</a> </li>
-                <li class="nav_enrich"><a href="enrichment">Enrichment Programs</a> </li>
-                <li class="nav_parent"><a href="parent">Parent Involvement</a> </li>
-                <li class="nav_contact"><a href="#home-contact">Contact</a></li>
-            </ul>
+            <a class="navhome active" href="index">Home</a>
+            <a class="navabout" href=" about">About Us</a>
+            <a class="navcampus" href="campus">Our Campus</a>
+            <a id="boomButton" class="navprograms" href="programs">Programs</a>
+            <a class="navenrich" href="enrichment">Enrichment Programs</a>
+            <a class="navparent " href="parent">Parent Involvement</a>
+            <a class="navcontact " href="#home-contact">Contact</a>
         </div>
 
         <nav class="menu-wrap">
@@ -39,3 +37,9 @@
     </div>
 
 </div>
+<script type="text/javascript">
+    $("#boomButton").on("click", function () {
+        $("a").addClass("active")
+    });
+
+</script>

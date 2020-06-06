@@ -216,90 +216,100 @@ small {
     padding-left: 0;
     margin-left: 0;
 }
-#horizontal ul {
+#horizontal {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;  
 }
-/* #horizontal ul li {
+#horizontal a {
 	color:#fff;
-
 	display: inline-block;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
-} */
-#horizontal ul li a {
+}
+#horizontal a {
 	color:#fff;
 	font-family: "Fredericka the Great";
 	padding-left: .8rem;
 	padding-right: .8rem;
 	font-weight:600;
 }
-li.nav_home.active,
-li.nav_about.active,
-li.nav_campus.active,
-li.nav_programs.active,
-li.nav_enrich.active,
-li.nav_parent.active,
-li.nav_contact.active {
-	padding-bottom:1rem;
+a.navhome.active,
+a.navabout.active,
+a.navcampus.active,
+a.navprograms.active,
+a.navenrich.active,
+a.navparent.active,
+a.navcontact.active {
+	background-color:#000438;
 }
-li.nav_home {
+/* .active {
+	padding-bottom:1rem;
+} */
+
+a.navhome {
     background: #efd30c;
 }
-li.nav_home:hover,
-li.nav_home:visited:hover{
+a.navhome:hover,
+a.navhome:visited:hover{
 	background: #ffc905;
 }
-li.nav_about {
+a.navhome:active{
+	background: #000438;
+}
+a.navabout {
 	background: #ce8bd0;
 	}
-li.nav_about:hover,
-li.nav_about:visited:hover{
+a.navabout:hover,
+a.navabout:visited:hover{
 	background: #f05ff5;
 }
-li.nav_campus {
+a.navcampus {
 	background: #337700;
 }
-li.nav_campus:hover,
-li.nav_campus:visited:hover{
+a.navcampus:hover,
+a.navcampus:visited:hover{
 	background: #57b50f;
 }	
-li.nav_programs {
+a.navprograms {
 	background: #d86401;
 }
-li.nav_programs:hover,
-li.nav_programs:visited:hover{
+a.navprograms:hover,
+a.navprograms:visited:hover{
 	background: #f99b00;
 }
-li.nav_enrich {
+a.navenrich {
 	background: #c1c55e;
 }
-li.nav_enrich:hover,
-li.nav_enrich:visited:hover{
+a.navenrich:hover,
+a.navenrich:visited:hover{
 	background: #dae104;
 }
-li.nav_parent {
+a.navparent {
 	background: #0088bf;
 }
-li.nav_parent:hover,
-li.nav_parent:visited:hover{
+a.navparent:hover,
+a.navparent:visited:hover{
 	background: #0db7fa;
 }
-li.nav_contact {
+a.navcontact {
 	background: #d01f03;
 }
-li.nav_contact:hover,
-li.nav_contact:visited:hover{
+a.navcontact:hover,
+a.navcontact:visited:hover{
 	background: #fa5900;
 }
 .content-main{
 	max-width:240rem;
 	margin: 0 auto;
 }
+/* #horizontal ul li a.active {
+    padding-bottom: 2rem;
+	background: #000438;
+} */
 /*-------hamburger--------*/
 .menu-wrap{
 	position: fixed;
@@ -640,7 +650,15 @@ padding-right:1.5rem;
 	text-align: center;
 	padding: 4rem 0 4rem;
 }
-
+.foot-hbs{
+	background: transparent;
+}
+.footer-index{
+	background: #efd30c;
+}
+.footer-programs{
+	background: #f3882d;
+}
 
 /*************** COMMON ****************/
 .content_main{
@@ -660,8 +678,6 @@ padding-right:1.5rem;
     opacity: .95;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3rem;
-    margin-bottom: 0;
     padding: 8rem 5rem;
     border-radius: 1rem 1rem 0 0;
 }
@@ -670,10 +686,10 @@ padding-right:1.5rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3rem;
-    margin-bottom: 0;
+    margin-bottom: -8rem;
     border-radius:1rem;
     margin-top: 46rem;
-	background-color:rgba(255,255,255,.8);
+	background-color:rgba(255,255,255,.5);
 	padding-top:3rem;
 	padding-bottom: 2.5rem;
 
@@ -681,9 +697,6 @@ padding-right:1.5rem;
 .subpage-img {
 	padding-top:3rem;
 	padding-bottom:3rem;
-}
-.gold {
-    background-color:#f3882d;
 }
 .pink {
     background-color:#e89bea;
@@ -697,9 +710,6 @@ padding-right:1.5rem;
 .aqua{
 	background:#42bbea;	
 }
-.yellow{
-	background:#efd30c;
-}
 /************* HOME PAGE ****************/
 section {
     padding-top: 8rem;
@@ -710,7 +720,6 @@ section#home-about {
 .section-header{ 
 	width:100%;
 	height: 15rem;
-	margin-bottom: 1rem;
 }
 .title-about h1 { 
 	color:#ce5dce;
