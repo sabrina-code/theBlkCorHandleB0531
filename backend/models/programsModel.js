@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema
 
-const PageSchema = new Schema(
+const ProgramsSchema = new Schema(
     {
         title: String,
         titlecls: String,
@@ -20,5 +20,5 @@ const PageSchema = new Schema(
     }
 );
 
-const Page = mongoose.model("page", PageSchema);
-module.exports = Page;
+const Programs = mongoose.model("programs", ProgramsSchema);
+module.exports = Programs;

@@ -108,33 +108,6 @@ a:visited:hover{
 ul {
 	list-style: none;
 }
-/* ul, ol {
-	margin-bottom: 2rem;
-}
-ul {
-	list-style: none outside;
-}
-ol {
-	list-style: decimal;
-}
-ol, ul.square, ul.circle, ul.disc {
-	margin-left: 3rem;
-}
-ul.square {
-	list-style: square outside;
-}
-ul.circle {
-	list-style: circle outside;
-}
-ul.disc {
-	list-style: disc outside;
-}
-ul ul, ul ol, ol ol, ol ul {
-	margin-left: 3rem;
-}
-ul ul li, ul ol li, ol ol li, ol ul li {
-	margin-bottom: 0
-} */
 img {
 	max-width: 100%;
 	height: auto;
@@ -656,8 +629,23 @@ padding-right:1.5rem;
 .footer-index{
 	background: #efd30c;
 }
+.footer-about{
+	background: #ce8bd0;
+}
+.footer-campus{
+	background: #458a11;
+}
 .footer-programs{
 	background: #f3882d;
+}
+.footer-enrich{
+	background: #b0bd56;
+}
+.footer-parent{
+	background: #42bbea;
+}
+.footer-contact{
+	background: #efd30c;
 }
 
 /*************** COMMON ****************/
@@ -697,18 +685,6 @@ padding-right:1.5rem;
 .subpage-img {
 	padding-top:3rem;
 	padding-bottom:3rem;
-}
-.pink {
-    background-color:#e89bea;
-}
-.green{
-	background:#458a11;
-}
-.olive{
-	background:#b0bd56;
-}
-.aqua{
-	background:#42bbea;	
 }
 /************* HOME PAGE ****************/
 section {
@@ -999,27 +975,48 @@ a.learn-more {
 /******** ABOUT PAGE *********/
 #about{
     position: relative;
-	z-index: 0;
-    background: url(../images/bgnd_about.jpg) top center;
+	background: url(../images/bgnd_about.jpg) top center;
+	background-position: center center;
 	background-size: cover;
 	-webkit-background-size: cover;
       -moz-background-size: cover;
-      -o-background-size: cover;
+	  -o-background-size: cover;
+    background-attachment: fixed;
 }
 #about .subpage_title h1 {
 	font-size:65px;
-	color:#ce5dce;
+	color:#963696;
 }
-#about h1 {
+#about h2 {
 	font-size:50px;
+	margin-bottom: 4rem;
 	color:#ce5dce;
-}
-#about .home-img {
-    background-color: #e89bea;
 }
 .title-about{
     background: url(../images/icon_about.png) no-repeat;
-    background-position: top right;
+    background-position: 95% center;
+}
+/******** CAMPUS PAGE *********/
+#campus{
+    position: relative;
+    background: url(../images/bgnd_campus.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#campus .subpage_title h1 {
+	font-size:65px;
+	color:#337700;
+	width:70vw;
+}
+#campus h2 {
+	font-size:50px;
+	color:#337700;
+}
+.title-campus{
+    background: url(../images/icon_campus.png) no-repeat;
+    background-position: right center;
+    height:130px;
 }
 /********** PROGRAMS PAGE ************/
 #programs{
@@ -1038,9 +1035,10 @@ a.learn-more {
 }
 #programs h2 {
 	font-size:4.5rem;
+	margin-bottom: 4rem;
 	color:#d86500;
 }
 .title-programs{
     background: url(../images/icon_programs.png) no-repeat;
-    background-position: center right;
+    background-position: right center;
 }
