@@ -7,17 +7,19 @@
             <a href="index" class="logo"><img src="images/logo.png" alt="logo" /></a>
         </div>
 
-        <div id="horizontal">
-            <a class="navhome active" href="index">Home</a>
-            <a class="navabout" href=" about">About Us</a>
-            <a class="navcampus" href="campus">Our Campus</a>
-            <a class="navprograms" href="programs">Programs</a>
-            <a class="navenrich" href="enrichment">Enrichment Programs</a>
-            <a class="navparent " href="parent">Parent Involvement</a>
-            <a class="navcontact " href="index#home-contact">Contact</a>
+        <div id="horizontal" class="">
+
+            <a class="navhome {{#if isActive}}{{index}}{{/if}}" href="index">Home</a></li>
+            <a class="navabout {{#if isActive}}{{about}}{{/if}}" href="about">About Us</a> </li>
+            <a class="navcampus {{#if isActive}}{{campus}}{{/if}}" href="campus">Our Campus</a> </li>
+            <a class="navprograms {{#if isActive}}{{programs}}{{/if}}" href="programs">Programs</a> </li>
+            <a class="navenrich {{#if isActive}}{{enrichment}}{{/if}}" href="enrichment">Enrichment Programs</a> </li>
+            <a class="navparent {{#if isActive}}{{parent}}{{/if}}" href="parent">Parent Involvement</a> </li>
+            <a class="navcontact {{#if isActive}}{{contatct}}{{/if}}" href="index#home-contact">Contact</a></li>
+
         </div>
 
-        <nav class="menu-wrap">
+        {{!-- <nav class="menu-wrap">
             <input type="checkbox" class="toggler">
             <div class="hamburger">
                 <div></div>
@@ -33,13 +35,28 @@
                     <li class="ham7"><a href="index#home-contact">Contact</a></li>
                 </ul>
             </div>
+        </nav> --}}
+        {{!-- </div> --}}
+
+
+
+        <nav class="hamburger">
+            <div class="nav-mobile">
+                <a id="nav-toggle" class="btn-open">
+                    <span class=""></span>
+                </a>
+            </div>
+            <div class="overlay">
+                <ul id="nav-overlay" class="overlay-list">
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="campus">Our Campus</a></li>
+                    <li><a href="programs">Programs</a></li>
+                    <li><a href="enrichment">Enrichment Programs</a></li>
+                    <li><a href="parent">Parent Involvement</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
+
     </div>
-
-</div>
-<script type="text/javascript">
-    $("#boomButton").on("click", function () {
-        $("a").addClass("active")
-    });
-
-</script>

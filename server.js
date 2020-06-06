@@ -8,6 +8,7 @@ const About = require("./backend/models/aboutModel");
 const Campus = require("./backend/models/campusModel");
 const Programs = require("./backend/models/programsModel");
 const Enrichment = require("./backend/models/enrichmentModel");
+const Parent = require("./backend/models/parentModel");
 const router = express.Router();
 const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access')
 
@@ -46,7 +47,7 @@ app.use("/", router);
 router.get("/index", async (req, res) => {
     try {
         const data = await Landing.find({});
-        res.render("index", { data, active: { navhome: true } })
+        res.render("index", { data, index: "active disabled", isActive: true })
     } catch (err) {
         console.error(err);
     }
@@ -55,7 +56,7 @@ router.get("/index", async (req, res) => {
 router.get("/about", async (req, res) => {
     try {
         const data = await About.find({});
-        res.render("about", { data })
+        res.render("about", { data, about: "active disabled", isActive: true })
     } catch (err) {
         console.error(err);
     }
@@ -64,7 +65,7 @@ router.get("/about", async (req, res) => {
 router.get("/campus", async (req, res) => {
     try {
         const data = await Campus.find({});
-        res.render("campus", { data })
+        res.render("campus", { data, campus: "active disabled", isActive: true })
     } catch (err) {
         console.error(err);
     }
@@ -73,7 +74,7 @@ router.get("/campus", async (req, res) => {
 router.get("/programs", async (req, res) => {
     try {
         const data = await Programs.find({});
-        res.render("programs", { data })
+        res.render("programs", { data, programs: "active disabled", isActive: true })
     } catch (err) {
         console.error(err);
     }
@@ -82,11 +83,21 @@ router.get("/programs", async (req, res) => {
 router.get("/enrichment", async (req, res) => {
     try {
         const data = await Enrichment.find({});
-        res.render("enrichment", { data })
+        res.render("enrichment", { data, enrichment: "active disabled", isActive: true })
     } catch (err) {
         console.error(err);
     }
 });
+
+router.get("/parent", async (req, res) => {
+    try {
+        const data = await Parent.find({});
+        res.render("parent", { data, parent: "active disabled", isActive: true })
+    } catch (err) {
+        console.error(err);
+    }
+});
+
 //API
 router.get("/api", async (req, res) => {
     try {
