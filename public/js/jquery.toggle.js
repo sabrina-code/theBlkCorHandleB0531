@@ -1,4 +1,3 @@
-
 (function ($) { // Begin jQuery
   $(function () { // DOM ready
 
@@ -22,6 +21,5 @@
       $('#nav-toggle').click().removeClass("active");
       $("#nav-overlay").hide();
     });
-
-  }); // end DOM ready
-})(jQuery); // end jQuery
+  });
+})(jQuery);

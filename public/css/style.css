@@ -39,43 +39,43 @@ body {
       -o-background-size: cover;
 }
 #about:after{
-	  background: url(../images/bgnd_about.jpg) top center;
-	  background-size: cover;
+	background: url(../images/bgnd_about.jpg) top center;
+	background-size: cover;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
 }
 #campus:after{
-	  background: url(../images/bgnd_campus.jpg) top center;
-	  background-size: cover;
+	background: url(../images/bgnd_campus.jpg) top center;
+	background-size: cover;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
 }
 #programs:after{
-	  background: url(../images/bgnd_programs.jpg) top center;
-	  background-size: cover;
+	background: url(../images/bgnd_programs.jpg) top center;
+	background-size: cover;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
 }
 #enrichment:after{
-	  background: url(../images/bgnd_enrichment.jpg) top center;
-	  background-size: cover;
+	background: url(../images/bgnd_enrichment.jpg) top center;
+	background-size: cover;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
 }
 #parent:after{
-	  background: url(../images/bgnd_parent.jpg) top center;
-	  background-size: cover;
+	background: url(../images/bgnd_parent.jpg) top center;
+	background-size: cover;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
 }
 #home-contact:after{
-	  background: url(../images/bgnd_home.jpg) top center;
-	  background-size: cover;
+	background: url(../images/bgnd_home.jpg) top center;
+	background-size: cover;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -85,13 +85,6 @@ header{
 }
 .container{
 	max-width:240rem;
-}
-hr {
-	border: solid #DDDDDD;
-	border-width: 1px 0 0;
-	clear: both;
-	margin: 2rem 0 4rem;
-	height: 0;
 }
 a {
 	color:#fff;
@@ -119,16 +112,14 @@ a.logo img {
 h1, h2,h3, h4, h5, h6 {
 	font-family: "Fredericka the Great";
 	color: #333;
-	line-height:80%;
+	line-height:110%;
 	margin-top:0;	
 }
 h1 {
 	font-size:5.5rem;
-	line-height: 5.5rem;
 }
 h2 {
 	font-size:2.8rem;
-	line-height: 4.8rem;
 }
 h3 {
 	font-size:1.2rem;
@@ -157,19 +148,89 @@ p.lead {
 	font-size: 3.1rem;
 	line-height: 3.1rem;	
 }
-em {
-	font-style: italic;
+.title-about h1 { 
+	color:#ce5dce;
+	margin-top: 3rem;
 }
-strong {
-	font-weight: 400;
+.title-campus h1 {
+	color:#337700;
+	margin-top: 3rem;
 }
-small {
-	font-size: 80%;
+.title-programs h1 { 
+	color:#d86500;
+	margin-top: 3rem;
 }
-.hide{
-	display:none;
+.title-enrichment h1 { 
+	color:#919603;
 }
-
+.title-parent h1{
+	color:#00a5e8;
+}
+.title-contact h1{
+	color:#b91d05;
+	margin-top: 3rem;
+}
+.subpage_title h1 {
+	margin-top: 1.3rem;
+	margin-left: 3.2rem;
+}
+.section-header h1
+ {
+	font-size: 5.5rem;
+}
+.section-header.title-enrichment h1,
+.section-header.title-parent h1
+ {
+	font-size: 5.5rem;
+	padding-top: 4rem;
+	width:88%;
+}
+#about .subpage_title h1,
+#campus .subpage_title h1,
+#programs .subpage_title h1,
+#enrichment .subpage_title h1,
+#parent .subpage_title h1   {
+	font-size: 6rem;
+}
+#about .subpage_title h1 {
+	color:#963696;
+}
+#campus .subpage_title h1 {
+	color:#337700;
+	width:70vw;
+}
+#programs .subpage_title h1 {
+	color:#d86500;
+}
+#enrichment .subpage_title h1 {
+	color:#919603;
+}
+#parent .subpage_title h1 {
+	padding-top: 3rem;
+	color:#018bc3;
+	width:60vw;
+}
+#about h2,
+#campus h2,
+#programs h2 {
+	font-size:4.5rem;
+	margin-bottom: 4rem;
+}
+#about h2 {
+	color:#ce5dce;
+}
+#campus h2 {
+	color:#337700;
+}
+#programs h2 {
+	color:#d86500;
+}
+#enrichment h2 {
+	color:#919603;
+}
+#parent h2 {
+	color:#00a5e8;
+}
 /*********** NAVI **********/
 #navi{
 	position: fixed;
@@ -187,7 +248,7 @@ small {
     padding-bottom:1rem;
     z-index:5;
     padding-left: 0;
-    margin-left: 0;
+	margin-left: 0;
 }
 #horizontal {
 	display: flex;
@@ -276,10 +337,6 @@ a.navcontact:visited:hover{
 	max-width:240rem;
 	margin: 0 auto;
 }
-/* #horizontal ul li a.active {
-    padding-bottom: 2rem;
-	background: #000438;
-} */
 /*-------hamburger--------*/
 .nav-mobile {
 	display: none;
@@ -289,7 +346,7 @@ a.navcontact:visited:hover{
 	background: transparent;
 	height: 7rem;
 	width: 7rem;
-	z-index: 15;
+	z-index: 6;
 }
 #nav-toggle{
 	position: absolute;
@@ -301,15 +358,15 @@ a.navcontact:visited:hover{
 #nav-toggle span, 
 #nav-toggle span:before, 
 #nav-toggle span:after {
-	cursor: pointer;
-	border-radius: 1px;
 	height: 4px;
 	width: 3.5rem;
 	background: #fff;
 	position: absolute;
+	border-radius: 1px;
 	display: block;
+	cursor: pointer;
 	content: '';
-	transition: all .5s ease-in-out;
+	transition: all .4s ease-in-out;
 	transform-origin: 0 0;
 }
 #nav-toggle span:before{
@@ -359,7 +416,7 @@ display:block;
 }
 ul.overlay-list li a{
 	font-family: "Fredericka the Great";
-	font-size: 6rem;
+	font-size: 5rem;
 	line-height:7rem;
 	display: block;
 	text-align: center;
@@ -400,7 +457,6 @@ ul.active.overlay-list {
 	}
 	.hamburger{
 		position: fixed;
-		z-index: 40;
 	}
 	#nav-overlay {
 		left: 0;
@@ -408,7 +464,7 @@ ul.active.overlay-list {
 		height: 90%;
 		width: 100%;
 		position: fixed; 
-		z-index: 10; 
+		z-index: 5; 
 		overflow-x: hidden; /* Disable horizontal scroll */
 		} 
 	} 
@@ -418,6 +474,7 @@ ul.active.overlay-list {
 	}
 	ul#nav-overlay{
 		padding-top: 9remx;
+		padding-left:0 !important;
 	}
 	ul.overlay-list li a{
 		font-size: 4rem;
@@ -437,8 +494,15 @@ ul.active.overlay-list {
     vertical-align:top;
     display:inline-block;
 	text-align:center;
-	padding-left:-1.5rem;
-	padding-right:-1.5rem;
+	opacity: .9;
+}
+.footer-logo:hover {
+	opacity: 1;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;	
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
 }
 .footer-adj{
 	padding: 10rem 10% 3rem;
@@ -475,14 +539,18 @@ ul.active.overlay-list {
 .social-icon a {
 font-size: 44px;
 color: #fff;
+opacity: .8;
 line-height: normal;
--webkit-transition: color .3s ease-in-out;
--moz-transition: color .3s ease-in-out;
--ms-transition: color .3s ease-in-out;
--o-transition: color .3s ease-in-out;
-transition: color .3s ease-in-out;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;	
+-ms-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
 padding-left:1.5rem;
 padding-right:1.5rem;
+}
+.social-icon a:hover {
+	opacity: 1;
 }
 .footer-content{
 	padding-top:12rem;
@@ -538,7 +606,7 @@ padding-right:1.5rem;
     opacity: .95;
     margin-left: auto;
     margin-right: auto;
-    padding: 8rem 5rem;
+    padding: 8rem 5%;
     border-radius: 1rem 1rem 0 0;
 }
 .subpage_title{
@@ -548,52 +616,21 @@ padding-right:1.5rem;
     margin-top: 3rem;
     margin-bottom: -8rem;
     border-radius:1rem;
-    margin-top: 46rem;
+    margin-top: 60vh;
 	background-color:rgba(255,255,255,.5);
 	padding-top:3rem;
 	padding-bottom: 2.5rem;
-
-}
-.subpage-img {
-	padding-top:3rem;
-	padding-bottom:3rem;
 }
 /************* HOME PAGE ****************/
 section {
     padding-top: 8rem;
 }
 section#home-about {
-	padding-top: 60rem;
+	padding-top: 70vh;
 }
 .section-header{ 
 	width:100%;
-	height: 15rem;
-}
-.title-about h1 { 
-	color:#ce5dce;
-	display:inline-block;
-}
-.title-campus h1 {
-	color:#337700;
-	display:inline-block;
-}
-.title-programs h1 { 
-	color:#d86500;
-	display:inline-block;
-}
-.title-enrichment h1 { 
-	color:#919603;
-	display:inline-block;
-}
-.title-parent h1{
-	color:#00a5e8;
-	display:inline-block;
-	margin-right: 2rem;
-}
-.title-contact h1{
-	color:#b91d05;
-	display:inline-block;
-	margin-right: 2rem;
+	height: 14rem;
 }
 .title-about .icon_sec img{
 	margin-top: -.8rem;
@@ -637,25 +674,7 @@ section#home-about {
 .title-contact{
     background: url(../images/icon_contact.png) no-repeat;
 	background-position: center right;
-	background-size: 100px;
-}
-.box-about {
-	padding:6px;
-    padding-left:2.5rem;
-    background:#bb7fbb;
-    color:#fff;
-    width:22rem;
-    padding-left:2.5rem;
-    margin-bottom: 4.5rem;
-    border-radius:5px;
-}
-.box-contact h2{
-	background: #b91d05;
-    color: #fff;
-    margin-bottom: 4.5rem;
-    border-radius: .5rem;
-    max-width: 40rem;
-    text-align: center;
+	background-size: 10rem;
 }
 .home-history{
 	color:#000;
@@ -706,24 +725,6 @@ a.learn-more {
 	background:#53b3fd;
     transition: all ease .5s;
 }
-.offer{
-	font-family: "Fredericka the Great";
-    color:#182191;
-}
-.box-programs {
-	padding:6px;
-    padding-left:2.5rem;
-    background:#f39c12;
-    color:#ffffff;
-    width:22rem;
-    padding-left:2.5rem;
-    margin-bottom: 2.5rem;
-}
-.about-content{
-	background-color:#fff;
-	opacity:.8;
-	margin:0 auto;	
-}
 .section-content{
     background-color: #fff;
     opacity: .95;
@@ -767,102 +768,16 @@ a.learn-more {
 .border-contact {
 	background-color: #b91d05;	
 }
-.subpage_title h1 {
-	margin-top: 1.3rem;
-	margin-left: 3.2rem;
-}
-.section-header h1
- {
-	font-size: 5.5rem;
-	padding-top: 4rem;
-}
-.section-header.title-enrichment h1,
-.section-header.title-parent h1
- {
-	font-size: 5.5rem;
-	padding-top: 4rem;
-	width:88%;
-}
-
-/******* RESPONSIVE ********/
-@media screen and (max-width: 992px) {
-.section-header.title-enrichment h1,
-.section-header.title-parent h1
-	{
-	padding-top: 1rem;
-	width:70%;
-}
-}
-@media screen and (max-width: 640px) {
-.section-header h1{
-	font-size: 4.8rem;
-	line-height: 4.8rem;
-}
-.section-header.title-enrichment,
-.section-header.title-parent
-{
-	height:15rem;
-}
-.section-header.title-enrichment h1,
-.section-header.title-parent h1
- {
-	font-size: 5.5rem;
-	padding-top: 1rem;
-}
-.title-about,
-.title-programs,
-.title-campus,
-.title-enrichment,
-.title-parent,
-.title-contact{
-	background-size: 90px;
-}
-}
-@media screen and (max-width: 480px) {
-	p{
-		font-size: 1.5rem;
-		margin: 0 0 4rem 0;
-	}
-	.section-content{
-		padding: 1rem 1.5rem;
-	}
-	.section-header h1,
-	.section-header.title-enrichment h1,
-	.section-header.title-parent h1
-	{
-		font-size: 3.3rem;
-		line-height: 3.7rem;
-		padding-top: 3.5rem;
-	}
-	.section-header h1{
-		padding-top: 5.6rem;
-	}
-	.box-contact h2 {
-		font-size: 2rem;
-	}
-	.home-history {
-		font-size: 2rem;
-	}
-}
 /******** ABOUT PAGE *********/
 #about{
     position: relative;
 	background: url(../images/bgnd_about.jpg) top center;
 	background-position: center center;
 	background-size: cover;
-	-webkit-background-size: cover;
+	  -webkit-background-size: cover;
       -moz-background-size: cover;
 	  -o-background-size: cover;
     background-attachment: fixed;
-}
-#about .subpage_title h1 {
-	font-size:5.5rem;
-	color:#963696;
-}
-#about h2 {
-	font-size:4.5rem;
-	margin-bottom: 4rem;
-	color:#ce5dce;
 }
 .title-about{
     background: url(../images/icon_about.png) no-repeat;
@@ -875,15 +790,6 @@ a.learn-more {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-}
-#campus .subpage_title h1 {
-	font-size:5.5rem;
-	color:#337700;
-	width:70vw;
-}
-#campus h2 {
-	font-size:4.5rem;
-	color:#337700;
 }
 .title-campus{
     background: url(../images/icon_campus.png) no-repeat;
@@ -901,15 +807,6 @@ a.learn-more {
 #trans_two{
     padding-top: 0;
 }
-#programs .subpage_title h1 {
-	font-size:6.5rem;
-	color:#d86500;
-}
-#programs h2 {
-	font-size:4.5rem;
-	margin-bottom: 4rem;
-	color:#d86500;
-}
 .title-programs{
     background: url(../images/icon_programs.png) no-repeat;
     background-position: 95% center
@@ -923,16 +820,6 @@ a.learn-more {
     background-size: cover;
     background-attachment: fixed;
 }
-#enrichment .subpage_title h1 {
-	display:block;
-	font-size:5.5rem;
-	color:#919603;
-	width:60vw;
-}
-#enrichment h2 {
-	font-size:4.5rem;
-	color:#919603;
-}
 .title-enrichment{
     background: url(../images/icon_enrichment.png) no-repeat;
     background-position: 95% center
@@ -945,21 +832,147 @@ a.learn-more {
     background-size: cover;
     background-attachment: fixed;
 }
-#parent .subpage_title h1 {
-	font-size:5.5rem;
-	color:#018bc3;
-	width:60vw;
-}
-#parent h2 {
-	font-size:4.5rem;
-	color:#00a5e8;
-}
-
 .title-parent{
     background: url(../images/icon_parent.png) no-repeat;
-    background-position: center right;    
+    background-position: 90% center;    
 }
 .title-contact{
     background: url(../images/icon_contact.png) no-repeat;
     background-position: 95% center
 }
+
+/******* RESPONSIVE ********/
+@media screen and (max-width: 992px) {
+	.section-header.title-enrichment h1,
+	.section-header.title-parent h1{
+		padding-top: 1rem;
+		width:70%;
+	}
+	#about .subpage_title h1,
+	#campus .subpage_title h1,
+	#programs .subpage_title h1,
+	#enrichment .subpage_title h1,
+	#parent .subpage_title h1   {
+	font-size: 5rem;
+}
+	}
+@media screen and (max-width: 768px) {
+	.section-header.title-enrichment h1,
+	.section-header.title-parent h1{
+		padding-top: 0rem;
+	}
+	#about h2,
+	#campus h2,
+	#programs h2,
+	#enrichment h2,
+	#parent h2 {
+		font-size: 3.5rem;
+	}
+	#parent .subpage_title h1 {
+		padding-top: 1rem;
+	}
+}
+@media screen and (max-width: 667px) {
+.subpage_title{
+	margin-top: 60vh;
+}
+}
+@media screen and (max-width: 640px) {
+.section-header {
+	height: 13rem;
+}
+.section-content {
+	margin: 3rem auto 0;
+	padding: 3rem 5%;
+}
+.sect-content {
+	padding: 6rem 5%;
+}
+.section-header h1{
+	font-size: 5rem;
+	line-height: 5.5rem;
+}
+#enrichment .subpage_title h1 {
+	display: block;
+	font-size: 5rem;
+	color: #919603;
+	width: 60vw;
+}
+#about h2,
+#campus h2,
+#programs h2,
+#enrichment h2,
+#parent h2{
+	margin-bottom: 2rem;
+	line-height: 3.5rem;
+}
+.title-about,
+.title-programs,
+.title-campus,
+.title-enrichment,
+.title-parent,
+.title-contact{
+	background-size: 9rem;
+}
+.title-parent{
+	background-size: 75px;
+}
+header.section-header.title-enrichment,
+header.section-header.title-parent {
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+}
+}
+@media screen and (max-width: 480px) {
+	p{
+		font-size: 1.5rem;
+		margin: 0 0 4rem 0;
+	}
+	.section-content{
+		padding: 3rem 1.5rem;
+	}
+	.section-header h1,
+	.section-header.title-enrichment h1,
+	.section-header.title-parent h1
+	{
+		font-size: 3.3rem;
+		line-height: 4.3rem;
+		margin-left:5%;
+		margin-right:5%;
+	}
+	.home-history {
+		font-size: 2rem;
+	}
+}
+@media screen and (max-width: 375px) {
+.section-header {
+	height: 10rem;
+}
+.sect-content {
+	padding: 5rem 5%;
+}
+#about .subpage_title h1,
+#campus .subpage_title h1,
+#programs .subpage_title h1,
+#enrichment .subpage_title h1,
+#parent .subpage_title h1 {
+	display: block;
+	font-size: 4rem;
+	margin-top: 0;
+}
+.section-header h1 {
+	padding-top: 2.5rem;
+}
+.subpage_title h1 {
+	margin-left: 1rem;
+}
+#about h2,
+#campuse h2,
+#programs h2,
+#enrichment h2,
+#parent h2 {
+	font-size: 3rem;
+}
+}
+
+	
