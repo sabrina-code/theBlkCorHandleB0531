@@ -1,6 +1,6 @@
 # blkCorHandleB0531
 
-Building blocks for the Cornerstone Preschool Website. Cornerstone is a Handelbars based website with a backend headless CMS for easy database management using Cloud-based MongoDB Atlas.
+Building blocks for the Cornerstone Preschool Website. Cornerstone is a Handelbars based website with a backend headless CMS for easy database management using Cloud-based MongoDB Atlas. (Image resources are not included in the repo.)
 
 ## Technology and Skills
 
