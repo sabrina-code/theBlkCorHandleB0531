@@ -6,6 +6,8 @@ https://cornerstonepreschool.herokuapp.com/
 
 > A paid professional project that allowed me to design and code the whole website.
 
+![profile](https://github.com/sabrina-code/theBlkCorHandleB0531/blob/master/cornerstone.jpg)
+
 ## Technology and Skills
 
 * JavaScript
