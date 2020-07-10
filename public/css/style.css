@@ -855,6 +855,11 @@ a.learn-more {
 	#parent .subpage_title h1   {
 	font-size: 5rem;
 }
+#about .subpage_title h1,
+#campus .subpage_title h1,
+#programs .subpage_title h1{
+	padding-top: 2rem;
+}
 	}
 @media screen and (max-width: 768px) {
 	.section-header.title-enrichment h1,

@@ -2,6 +2,10 @@
 
 Building blocks for the Cornerstone Preschool Website. Cornerstone is a Handelbars based website with a backend headless CMS for easy database management using Cloud-based MongoDB Atlas. (Image resources are not included in the repo.)
 
+https://cornerstonepreschool.herokuapp.com/
+
+> A paid professional project that allowed me to design and code the whole website.
+
 ## Technology and Skills
 
 * JavaScript
