@@ -8,6 +8,8 @@ https://cornerstonepreschool.herokuapp.com/
 
 ![profile](https://github.com/sabrina-code/theBlkCorHandleB0531/blob/master/cornerstone.jpg)
 
+Images are not included in the repo as I do not own the copyright.
+
 ## Technology and Skills
 
 * JavaScript
